@@ -26,6 +26,7 @@ import {
     Line,
 } from "./pages";
 import { useStateContext } from "./contexts/ContextProvider";
+import { Navigate } from "react-router-dom";
 
 const App = () => {
     const { activeMenu } = useStateContext();
@@ -100,6 +101,11 @@ const App = () => {
                             />
                             <Route path="/pyramid" element={<Pyramid />} />
                             <Route path="/stacked" element={<Stacked />} />
+
+                            <Route
+                                path="*"
+                                element={<Navigate to="/home" replace />}
+                            />
                         </Routes>
                     </div>
                 </div>

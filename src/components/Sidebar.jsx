@@ -57,12 +57,9 @@ const Sidebar = () => {
                                         to={`${link.name}`}
                                         key={`${link.name}`}
                                         onClick={() => {}}
-                                        className={({ isActive }) => {
-                                            console.log(isActive);
-                                            return isActive
-                                                ? activeLink
-                                                : normalLink;
-                                        }}
+                                        className={({ isActive }) =>
+                                            isActive ? activeLink : normalLink
+                                        }
                                     >
                                         {link.icon}
                                         <span className="capitalize">
