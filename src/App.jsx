@@ -67,47 +67,62 @@ const App = () => {
                         <div className="fixed md:static bg-main-bg dark:bg-main-bg navbar w-full">
                             <Navbar />
                         </div>
-                    </div>
 
-                    <div>
-                        <Routes>
-                            {/* Dashboard */}
-                            <Route path="/home" element={<Ecommerce />} />
-                            <Route path="/ecommerce" element={<Ecommerce />} />
+                        <div>
+                            <Routes>
+                                {/* Dashboard */}
+                                <Route path="/home" element={<Ecommerce />} />
+                                <Route
+                                    path="/ecommerce"
+                                    element={<Ecommerce />}
+                                />
 
-                            {/* Pages */}
-                            <Route path="/orders" element={<Orders />} />
-                            <Route path="/employees" element={<Employees />} />
-                            <Route path="/cutomers" element={<Customers />} />
+                                {/* Pages */}
+                                <Route path="/orders" element={<Orders />} />
+                                <Route
+                                    path="/employees"
+                                    element={<Employees />}
+                                />
+                                <Route
+                                    path="/cutomers"
+                                    element={<Customers />}
+                                />
 
-                            {/* Apps */}
-                            <Route path="/kanban" element={<Kanban />} />
-                            <Route path="/editor" element={<Ecommerce />} />
-                            <Route path="/calendar" element={<Ecommerce />} />
-                            <Route
-                                path="/color-picker"
-                                element={<Ecommerce />}
-                            />
+                                {/* Apps */}
+                                <Route path="/kanban" element={<Kanban />} />
+                                <Route path="/editor" element={<Ecommerce />} />
+                                <Route
+                                    path="/calendar"
+                                    element={<Ecommerce />}
+                                />
+                                <Route
+                                    path="/color-picker"
+                                    element={<Ecommerce />}
+                                />
 
-                            {/* Charts */}
-                            <Route path="/line" element={<Line />} />
-                            <Route path="/area" element={<Area />} />
-                            <Route path="/bar" element={<Bar />} />
-                            <Route path="/pie" element={<Pie />} />
-                            <Route path="/financial" element={<Financial />} />
-                            <Route
-                                path="/color-mapping"
-                                element={<ColorMapping />}
-                            />
-                            <Route path="/pyramid" element={<Pyramid />} />
-                            <Route path="/stacked" element={<Stacked />} />
+                                {/* Charts */}
+                                <Route path="/line" element={<Line />} />
+                                <Route path="/area" element={<Area />} />
+                                <Route path="/bar" element={<Bar />} />
+                                <Route path="/pie" element={<Pie />} />
+                                <Route
+                                    path="/financial"
+                                    element={<Financial />}
+                                />
+                                <Route
+                                    path="/color-mapping"
+                                    element={<ColorMapping />}
+                                />
+                                <Route path="/pyramid" element={<Pyramid />} />
+                                <Route path="/stacked" element={<Stacked />} />
 
-                            <Route
-                                path="*"
-                                element={<Navigate to="/home" replace />}
-                            />
-                        </Routes>
-                    </div>
+                                <Route
+                                    path="*"
+                                    element={<Navigate to="/home" replace />}
+                                />
+                            </Routes>
+                        </div>
+                    </div>{" "}
                 </div>
             </BrowserRouter>
         </div>
